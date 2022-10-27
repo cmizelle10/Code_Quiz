@@ -9,6 +9,25 @@
 <body>
     <h1>Coding Quiz Challenge</h1>
 
-    <a class="btn" href="game.html">Start Quiz</a>
+    <button class="btn" id="js-start-quiz">Start Quiz</button>
+
+    <div class="container">
+        <div id="js-quiz" class="justify-center flex-column">
+          <div id="display-bar">
+            <div id="display-bar-item">
+              <p class="display-topic">Score:</p>
+                <h1 class="display-topic-text" id="js-score">0</h1>
+              </div>
+              <div id="display-bar-item">
+                <p class="display-topic">Time Remaining:</p>
+                  <h1 class="display-topic-text" id="js-timer"></h1>
+                </div>
+          </div>
+          <h2 id="js-question-text"></h2>
+          <ul id="js-answer-list"></ul>
+        
+        </div>
+      </div>
+      <script src="script.js"></script>
 </body>
 </html>

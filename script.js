@@ -9,24 +9,46 @@ var quizScore = 0;
 var quizTimer = 0;
 var currentQuestionIndex = 0;
 
+var currentAnswer = "";
+
 
 var questions = [{
-    questionText: "Question1",
+    questionText: "____ is a widely used scripting language that adds functionality and interactiviy to a webpage",
     questionChoices: {
-        a: "answer1",
-        b: "answer2",
-        c: "answer3",
-        d: "answer4"
+        a: "HTML",
+        b: "CSS",
+        c: "JavaScript",
+        d: "Java"
     },
     questionAnswer: 'c'
 },
 {
-    questionText: "Question2",
+    questionText: "The ____ element is used to embed executable code or data. It is typically used to embed or refer to JavaScript code",
     questionChoices: {
-        a: "answer1",
-        b: "answer2",
-        c: "answer3",
-        d: "answer4"
+        a: "script",
+        b: "HTML",
+        c: "head",
+        d: "style"
+    },
+    questionAnswer: 'a'
+},
+{
+    questionText: "The ____ statement declares a function-scoped or globally-scoped variable, optionally initializing it to a value",
+    questionChoices: {
+        a: "break",
+        b: "var",
+        c: "if...else",
+        d: "function"
+    },
+    questionAnswer: 'b'
+},
+{
+    questionText: "The ____ operator returns true if the operands are equal and of the same type",
+    questionChoices: {
+        a: ">=",
+        b: "!=",
+        c: "==",
+        d: "==="
     },
     questionAnswer: 'd'
 }]
@@ -58,5 +80,11 @@ function startQuiz() {
 
 startQuizBtn.addEventListener("click", startQuiz);
 
+function checkAnswer(userAnswer) {
+    
+}
 
 // event delegation, how to grab attributes
+
+console.log(questions);
+console.log(currentAnswer);

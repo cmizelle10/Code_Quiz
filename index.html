@@ -4,30 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <title>Code Quiz</title>
 </head>
 <body>
-    <h1>Coding Quiz Challenge</h1>
-
+    <h1 id = "js-quiz-challenge">Coding Quiz Challenge</h1>
+    <p id = "js-quiz-challenge-description">This is a game to test your JavaScript knowledge. Once you
+      press the start button, you will be provided questions along with a countdown timer. If you get the 
+    question wrong, 5 seconds will be subtracted from the time remaining. Once the time is up, your score 
+  will be stored. </p>
     <button class="btn" id="js-start-quiz">Start Quiz</button>
 
     <div class="container">
-        <div id="js-quiz" class="justify-center flex-column">
-          <div id="display-bar">
-            <div id="display-bar-item">
-              <p class="display-topic">Score:</p>
-                <h1 class="display-topic-text" id="js-score">0</h1>
-              </div>
-              <div id="display-bar-item">
-                <p class="display-topic">Time Remaining:</p>
-                  <h1 class="display-topic-text" id="js-timer"></h1>
-                </div>
+      <div id="js-quiz" class="justify-center flex-column">
+        <div id="display-bar">
+          <div id="display-bar-item1">
+            <p class="display-topic">Time Remaining:</p>
+            <h1 class="display-topic-text" id="js-timer"></h1>
           </div>
-          <h2 id="js-question-text"></h2>
-          <ul id="js-answer-list"></ul>
-        
+          <div id="display-bar-item2">
+            <p class="display-topic">Score:</p>
+            <h1 class="display-topic-text" id="js-score"></h1>
+          </div>
         </div>
+        <h2 id="js-evaluation-text"></h2>
+        <h2 id="js-question-text"></h2>
+        <ul id="js-answer-list"></ul>
       </div>
-      <script src="script.js"></script>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

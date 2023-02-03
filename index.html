@@ -1,37 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Code Quiz</title>
-</head>
-<body>
-    <h1 id = "js-quiz-challenge">Coding Quiz Challenge</h1>
-    <p id = "js-quiz-challenge-description">This is a game to test your JavaScript knowledge. Once you
-      press the start button, you will be provided questions along with a countdown timer. If you get the 
-    question wrong, 5 seconds will be subtracted from the time remaining. Once the time is up, your score 
-  will be stored. </p>
-    <button class="btn" id="js-start-quiz">Start Quiz</button>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timed Code Quiz</title>
+<link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
+<link href="highScores.html" rel="HTML" type="icon"/>
+
+<body>
+    <!-- Adding link to view high scores -->
+    <a id="high-score" href="highScores.html">View Highscores</a>
     <div class="container">
-      <div id="js-quiz" class="justify-center flex-column">
-        <div id="display-bar">
-          <div id="display-bar-item1">
-            <p class="display-topic">Time Remaining:</p>
-            <h1 class="display-topic-text" id="js-timer"></h1>
-          </div>
-          <div id="display-bar-item2">
-            <p class="display-topic">Score:</p>
-            <h1 class="display-topic-text" id="js-score"></h1>
-          </div>
+        <!-- Countdown timer -->
+        <div id="timer">Time Remaining: 0</div>
+        <!-- Quiz Content -->
+        <div id="questions-div">
+            <h1> JavaScript Quiz Challenge</h1>
+            <p>This quiz will assess your knowledge of JavaScript with multiple choice questions. Click the "Start"
+                button to begin the quiz. You will have 60 seconds to complete the assessment. Each incorrect answer 
+                will result in 10 seconds subtracted from your time remaining.</p>
+            <!-- Create unordered list which will be populated with multiple choice answers -->
+            <ul id="question-choices"></ul>
         </div>
-        <h2 id="js-evaluation-text"></h2>
-        <h2 id="js-question-text"></h2>
-        <ul id="js-answer-list"></ul>
-      </div>
+        <!-- Start button to begin quiz -->
+        <button type="button" id="start-button">Start Quiz</button>
     </div>
-    <script src="script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

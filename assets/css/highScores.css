@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: blue;    
+}
+
+#highScore {
+    list-style-type: decimal; 
+    display:inline-block;
+    text-align: center;
+    padding-left: 0px;      
+}
+  
+li {
+    font-size: 20px;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+#goBack{
+    position: relative;
+    bottom: -100px;
+    background-color: lightgray;
+    border-color: grey;
+    border-width: 3px;
+    border-radius: 12px;
+}
+
+#clear{
+    position: relative;
+    bottom: -100px;
+    background-color: lightgray;
+    border-color: grey;
+    border-width: 3px;
+    border-radius: 12px;
+}

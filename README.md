@@ -60,4 +60,4 @@ No testing provided for this project.
 
 ## Link to page
 
-Click [here](https://cmizelle10.github.io/Password-Generator/) to visit page with deployed application.
+Click [here](https://cmizelle10.github.io/Code_Quiz/) to visit page with deployed application.

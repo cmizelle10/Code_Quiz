@@ -1,0 +1,78 @@
+body {
+    font-family: 'Lucida Console';
+}
+
+#high-score{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    padding-left: 40px;
+    color: black;
+    font-style: normal;
+}
+
+#timer {
+    border-style: solid;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    padding: 15px;
+    margin-right: 40px;
+}
+
+.container {
+    text-align: center;
+    padding: 50px 50px 50px 50px;
+}
+
+#questions-div{
+    padding: 50px 50px 50px 50px;
+}
+
+#question-choices {
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+    width: 200px;
+}
+
+li {
+background-color: lightblue;
+border-style: groove;
+border-color: blue;
+padding-top: 10px;
+padding-bottom: 10px;
+margin-bottom: 5px; 
+
+}
+
+#start-button{
+    height: 50px;
+    width: 150px;
+    margin-top: 40px;
+    background-color: lightblue;
+    border-color: blue;
+    border-radius: 10px;
+}
+
+#createH1 {
+    font-size: 50px;
+    color: blue;
+}
+
+#initials{
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+}
+
+button {
+    font-size: 120%;
+    height: 35px;
+    width: 75px;
+    border-radius: 10px;
+}
+
+#createDiv {
+    margin-top: 40px; 
+}
